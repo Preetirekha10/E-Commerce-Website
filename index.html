@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="Fashnify.jpg" alt="Logo">
+        <ul>
+          <li><a href="#men">MEN</a></li>
+          <li><a href="#women">WOMEN</a></li>
+          <li><a href="#trends">TRENDS</a></li>
+          <li><a href="#blogs">BLOGS</a></li>
+        </ul>
+      </div>
+      <div class="searchBar">
+        <input type="text" id="searchInput" placeholder="search products & more">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-bag-shopping" id="cartIcon"></i> 
+      </div>
+    </nav>
+
+    <div class="main">
+      <img src="main.jpg" alt="">
+      <div class="mainText">
+        <button>Explore</button>
+      </div>
+    </div>
+
+    <div id="men">
+      <div class="head"><h1>Men's Wear</h1></div>
+      <div class="mens product-section">
+        <div class="card" data-title="Men Shirt" data-price="799"><img src="men1.jpg" alt=""><p>Men Shirt</p><p class="price">Rs. 799</p><p>⭐⭐⭐⭐☆</p></div>
+        <div class="card" data-title="Men shirt" data-price="1299"><img src="men2.jpg" alt=""><p>Men Shirt</p><p class="price">Rs. 1299</p><p>⭐⭐⭐⭐⭐</p></div>
+        <div class="card" data-title="Men Kurta" data-price="499"><img src="men3.jpg" alt=""><p>Men Kurta</p><p class="price">Rs. 499</p><p>⭐⭐⭐☆☆</p></div>
+      </div>
+    </div>
+
+    <div id="women">
+      <div class="head"><h1>Women's Wear</h1></div>
+      <div class="womens product-section">
+        <div class="card" data-title="Women Dress" data-price="999"><img src="women1.jpg" alt=""><p>Women Dress</p><p class="price">Rs. 999</p><p>⭐⭐⭐⭐☆</p></div>
+        <div class="card" data-title="Women Gown" data-price="1499"><img src="women2.jpg" alt=""><p>Women Gown</p><p class="price">Rs. 1499</p><p>⭐⭐⭐⭐⭐</p></div>
+        <div class="card" data-title="Women Top" data-price="699"><img src="women3.jpg" alt=""><p>Women Top</p><p class="price">Rs. 699</p><p>⭐⭐⭐☆☆</p></div>
+      </div>
+    </div>
+
+    <div id="trends">
+      <div class="head"><h1>Limited Stocks</h1></div>
+      <div class="slides">
+        <div class="slideCard">
+          <img src="women1.jpg" alt="">
+          <img src="women2.jpg" alt="">
+          <img src="women3.jpg" alt="">
+        </div>
+        <div class="slideCard">
+          <img src="men1.jpg" alt="">
+          <img src="men2.jpg" alt="">
+          <img src="men3.jpg" alt="">
+        </div>
+        <div class="slideCard">
+          <img src="women1.jpg" alt="">
+          <img src="men1.jpg" alt="">
+          <img src="women3.jpg" alt="">
+        </div>
+        <div class="slideCard">
+          <img src="men1.jpg" alt="">
+          <img src="women2.jpg" alt="">
+          <img src="men2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="blogs">
+      <div class="head"><h1>Read Blogs</h1></div>
+      <div class="blogs">
+        <div class="blogCard">
+          <img src="women3.jpg" alt="">
+          <h3>Read Trends Cloths Blogs</h3>
+          <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read</a>
+        </div>
+        <div class="blogCard">
+          <img src="men2.jpg" alt="">
+          <h3>Read Trends Cloths Blogs</h3>
+          <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="text">
+        <h2>About</h2>
+        <p>Trending Cloth</p><p>Invention</p><p>Search</p><p>Affordable</p>
+      </div>
+      <div class="text">
+        <h2>Men</h2>
+        <p>Quality</p><p>Good Fabric</p><p>Best Ever</p><p>Affordable</p>
+      </div>
+      <div class="text">
+        <h2>Women</h2>
+        <p>Quality</p><p>Good Fabric</p><p>Best Ever</p><p>Affordable</p>
+      </div>
+      <div class="text">
+        <h2>Connect Us</h2>
+        <p>Instagram</p><p>Facebook</p><p>Twitter</p><p>Youtube</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cartPanel" style="display:none; position:fixed; top:80px; right:20px; width:300px; background:white; box-shadow:0 0 10px gray; padding:20px; z-index:100;">
+    <h3>Cart Items</h3>
+    <ul id="cartList"></ul>
+    <p><strong>Total:</strong> Rs. <span id="cartTotal">0</span></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
